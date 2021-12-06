@@ -5,6 +5,7 @@ import Profile from "./pages/Profile"
 import Path from "./pages/Path";
 import NotFound from './pages/NotFound';
 import SignUp from './pages/SignUp';
+import Playgrounds from './pages/Playgrounds';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Path />
             </Route>
             <Route path="/playgrounds">
+              <Playgrounds />
             </Route>
             <Route path="*">
               <NotFound />
