@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import background from "../img/icon.ico";
 
 function Copyright(props) {
     return (
@@ -40,7 +41,7 @@ export default function SignIn() {
     };
 
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme} >
             <Container component="main" maxWidth="xs">
                 <CssBaseline />
                 <Box
@@ -51,10 +52,9 @@ export default function SignIn() {
                         alignItems: 'center',
                     }}
                 >
-                    <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-                        <LockOutlinedIcon />
-                    </Avatar>
-                    <Typography component="h1" variant="h5">
+
+                    <div style={{ backgroundImage: `url(${background})`, width: '150px', height: "130px", backgroundPosition: 'center' }}></div>
+                    <Typography component="h1" variant="h4">
                         Sign in
                     </Typography>
                     <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
@@ -86,6 +86,7 @@ export default function SignIn() {
                             type="submit"
                             fullWidth
                             variant="contained"
+                            color="primary"
                             sx={{ mt: 3, mb: 2 }}
                         >
                             Sign In
