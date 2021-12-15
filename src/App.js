@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Profile from "./pages/Profile"
@@ -6,6 +6,9 @@ import Path from "./pages/Path";
 import NotFound from './pages/NotFound';
 import SignUp from './pages/SignUp';
 import Playgrounds from './pages/Playgrounds';
+import Practice from './pages/Practice';
+import CodingChallenge from './pages/CodingChallenge';
+import Glossary from './pages/Glossary';
 
 function App() {
   return (
@@ -30,6 +33,15 @@ function App() {
             </Route>
             <Route path="/playgrounds">
               <Playgrounds />
+            </Route>
+            <Route path="/practice">
+              <Practice/>
+            </Route>
+            <Route path="/codingChallenge">
+              <CodingChallenge />
+            </Route>
+            <Route path="/glossary">
+              <Glossary  />
             </Route>
             <Route path="*">
               <NotFound />

@@ -1,8 +1,16 @@
+
+import React from 'react';
+import {Navbar} from '../components/Navbar';
+import {SidebarData} from '../components/SidebarData';
+
 const Profile = () => {
     return (
-        <div>
-            <h1>Profle Page</h1>
-        </div>
+      <div className='items'>
+          <Navbar/>
+          <SidebarData/>
+      </div>
+    
+    
     );
 }
 
