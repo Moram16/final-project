@@ -1,16 +1,12 @@
+import "../components/Sidebar"
+import "../components/Sidebar.css"
+import "../components/CountdownTimer/CountdownTimer"
+import "../components/CountdownTimer/CountdownTimer.css"
 
-import React from 'react';
-import {Navbar} from '../components/Navbar';
-import {SidebarData} from '../components/SidebarData';
 
 const Profile = () => {
     return (
-      <div className='items'>
-          <Navbar/>
-          <SidebarData/>
-      </div>
-    
-    
+        <h1>Profile</h1>
     );
 }
 

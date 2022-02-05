@@ -1,44 +1,30 @@
-import React from 'react'
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
-
+import React from 'react';
+import HomeIcon from '@mui/icons-material/Home';
+import PersonIcon from '@mui/icons-material/Person';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 
 export const SidebarData = [
     {
-        title: 'Home',
-        path: '/',
-        icon: <AiIcons.AiFillHome/>,
-        cName: 'nav-text'
+        title: "Home",
+        icon: <HomeIcon />,
+        link: "/"
     },
     {
-        title: 'Path',
-        path: '/path',
-        icon: <AiIcons.AiFillHome/>,
-        cName: 'nav-text'
+        title: "Path",
+        icon: <WorkspacePremiumIcon />,
+        link: "/Path"
     },
     {
-        title: 'Playgrounds',
-        path: '/playgrounds',
-        icon: <AiIcons.AiFillHome/>,
-        cName: 'nav-text'
+        title: "Playgrounds",
+        icon: <SportsEsportsIcon />,
+        link: "/Playgrounds"
     },
     {
-        title: 'Practice',
-        path: '/practice',
-        icon: <AiIcons.AiFillHome/>,
-        cName: 'nav-text'
-    },
-    {
-        title: 'CodingChallenge',
-        path: '/codingChallenge',
-        icon: <AiIcons.AiFillHome/>,
-        cName: 'nav-text'
-    },
-    {
-        title: 'Glossary',
-        path: '/glossary',
-        icon: <AiIcons.AiFillHome/>,
-        cName: 'nav-text'
+        title: "Personal Details",
+        icon: <PersonIcon />,
+        link: "/"
     },
 ]
+
+
